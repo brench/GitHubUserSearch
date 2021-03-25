@@ -1,0 +1,50 @@
+
+<div class="m-2">
+
+
+  <div>
+    <div class="mb-2">Enter a GitHub user's name or email address (enter at least {{minCharsForSearch}} characters):</div>
+    <input #searchInput />
+  </div>
+
+
+  <div *ngIf="users.length > 0">
+    <div class="mb-2">Page {{currentPage}} of {{totalPageCount}}</div>
+    <button class="mr-2" [disabled]="currentPage == 1" (click)="goToPreviousPage()">Previous</button>
+    <button [disabled]="currentPage == totalPageCount" (click)="goToNextPage()">Next</button>
+  </div>
+
+  <div *ngIf="searchIsBeingDone">Loading...</div>
+
+
+  <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="users && users.length > 0">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Avatar</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Email</th>
+        <th>Number of Public Repos</th>
+        <th>Created On</th>
+        <th>Last Updated On</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td><a href="https://github.com/{{user.Username}}" target="_blank">{{user.Username}}</a></td>
+        <td><img src="{{user.AvatarUrl}}" height="50" width="50" /></td>
+        <td>{{user.Name}}</td>
+        <td>{{user.Location}}</td>
+        <td>{{user.Email}}</td>
+        <td>{{user.CountOfPublicRepos}}</td>
+        <td>{{user.CreatedAt | date:'mediumDate'}}</td>
+        <td>{{user.UpdatedAt | date:'mediumDate'}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
