@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "githubusersearch-ac596"
+  },
+  "targets": {
+    "githubusersearch-ac596": {
+      "hosting": {
+        "GitHubSearch": [
+          "githubusersearch-ac596"
+        ]
+      }
+    }
   }
 }

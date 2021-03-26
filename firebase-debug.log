@@ -1,0 +1,38 @@
+[debug] [2021-03-26T00:45:21.829Z] ----------------------------------------------------------------------
+[debug] [2021-03-26T00:45:21.831Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bradl\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2021-03-26T00:45:21.831Z] CLI Version:   9.8.0
+[debug] [2021-03-26T00:45:21.831Z] Platform:      win32
+[debug] [2021-03-26T00:45:21.831Z] Node Version:  v12.13.1
+[debug] [2021-03-26T00:45:21.832Z] Time:          Thu Mar 25 2021 20:45:21 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-03-26T00:45:21.832Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-03-26T00:45:21.838Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-26T00:45:21.838Z] > authorizing via signed-in user
+[debug] [2021-03-26T00:45:21.838Z] [iam] checking project githubusersearch-ac596 for permissions ["firebase.projects.get"]
+[debug] [2021-03-26T00:45:21.840Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-26T00:45:21.841Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-26T00:45:21.933Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 26 Mar 2021 00:45:23 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-26T00:45:21.958Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/githubusersearch-ac596:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-03-26T00:45:22.133Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 26 Mar 2021 00:45:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=135","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-26T00:45:22.134Z] > refreshing access token with scopes: []
+[debug] [2021-03-26T00:45:22.135Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-26T00:45:22.205Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Fri, 26 Mar 2021 00:45:23 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-26T00:45:22.232Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/githubusersearch-ac596 [none]
+[debug] [2021-03-26T00:45:22.429Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/githubusersearch-ac596 200
+[debug] [2021-03-26T00:45:22.429Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/githubusersearch-ac596 {"projectId":"githubusersearch-ac596","projectNumber":"770438881962","displayName":"GitHubUserSearch","name":"projects/githubusersearch-ac596","resources":{"hostingSite":"githubusersearch-ac596"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from 'C:\Users\bradl\Documents\Create Software\ResultStack\Prompt\GitHubUserSearch'...
+[info] 
+[debug] [2021-03-26T00:45:22.434Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/githubusersearch-ac596/webApps/-/config [none]
+[debug] [2021-03-26T00:45:22.771Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/githubusersearch-ac596/webApps/-/config 200
+[debug] [2021-03-26T00:45:22.771Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/githubusersearch-ac596/webApps/-/config {"projectId":"githubusersearch-ac596","storageBucket":"githubusersearch-ac596.appspot.com","apiKey":"AIzaSyB93rMTBpqMVvLmlA6g_3rZqF09QIsSdvg","authDomain":"githubusersearch-ac596.firebaseapp.com","messagingSenderId":"770438881962"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting[GitHubSearch]: Serving hosting files from: dist/GitHubSearch {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/GitHubSearch\u001b[22m"}}
+[info] +  hosting[GitHubSearch]: Local server: http://localhost:5005 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5005\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [26/Mar/2021:00:45:34 +0000] "GET / HTTP/1.1" 200 595 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Mar/2021:00:45:34 +0000] \"GET / HTTP/1.1\" 200 595 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Mar/2021:00:45:34 +0000] "GET /main.94803624a7ef0b8cc3d3.js HTTP/1.1" 200 350385 "http://localhost:5005/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Mar/2021:00:45:34 +0000] \"GET /main.94803624a7ef0b8cc3d3.js HTTP/1.1\" 200 350385 \"http://localhost:5005/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Mar/2021:00:45:34 +0000] "GET /favicon.ico HTTP/1.1" 200 948 "http://localhost:5005/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Mar/2021:00:45:34 +0000] \"GET /favicon.ico HTTP/1.1\" 200 948 \"http://localhost:5005/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\""}}
