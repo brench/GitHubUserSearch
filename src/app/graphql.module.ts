@@ -13,7 +13,7 @@ export function createApollo(httpLink: HttpLink): ApolloClientOptions<any> {
   }));
 
   const auth = setContext((operation, context) => {
-    const token = ''; // set this to a valid GitHub personal token with appropriate rights for searching users
+    const token = '4b1dcf7733e0d7dc0bb649ba6683440a244f5a19'; // set this to a valid GitHub personal token with appropriate rights for searching users
 
     if (token === null) {
       return {};
